@@ -106,7 +106,7 @@ class TestName(unittest.TestCase):
 
     FAILED (failures=1)
 
-## Example 2 : Imported from test2
+## Example 2 : Imported from test2 and Testing using Fastcore
 
 ``` python
 class TestName(unittest.TestCase):
