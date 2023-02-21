@@ -5,4 +5,7 @@ d = { 'settings': { 'branch': 'main',
                 'doc_host': 'https://Pankajkumar-Bankar.github.io',
                 'git_url': 'https://github.com/Pankajkumar-Bankar/nbdev-test2',
                 'lib_path': 'nbdev_test2'},
-  'syms': {'nbdev_test2.core': {'nbdev_test2.core.foo': ('core.html#foo', 'nbdev_test2/core.py')}}}
+  'syms': { 'nbdev_test2.core': {'nbdev_test2.core.foo': ('core.html#foo', 'nbdev_test2/core.py')},
+            'nbdev_test2.test2': { 'nbdev_test2.test2.Name': ('core.html#name', 'nbdev_test2/test2.py'),
+                                   'nbdev_test2.test2.Name.__init__': ('core.html#name.__init__', 'nbdev_test2/test2.py'),
+                                   'nbdev_test2.test2.Name.name': ('core.html#name.name', 'nbdev_test2/test2.py')}}}

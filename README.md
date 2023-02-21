@@ -14,10 +14,11 @@ pip install nbdev_test2
 
 ## How to use
 
-Fill me in please! Don’t forget code examples:
+basic functionality of nbdev
+
+Example1
 
 ``` python
-1+1
 ```
 
     2
