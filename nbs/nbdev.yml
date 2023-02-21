@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "nbdev-test2"
+  site-url: "https://Pankajkumar-Bankar.github.io/nbdev-test2"
+  description: "nbdev test library"
+  repo-branch: main
+  repo-url: "https://github.com/Pankajkumar-Bankar/nbdev-test2"
