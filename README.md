@@ -16,9 +16,136 @@ pip install nbdev_test2
 
 basic functionality of nbdev
 
-Example1
+## Examples
+
+------------------------------------------------------------------------
+
+### Add
+
+>      Add ()
+
+This class performs addition.
+
+TestCase1
 
 ``` python
+class TestName(unittest.TestCase):
+    def test_name(self):
+        result = Add().addition(5,2)
+        self.assertEqual(result,7)
 ```
 
-    2
+    test_name (__main__.TestName) ... ok
+
+    ----------------------------------------------------------------------
+    Ran 1 test in 0.004s
+
+    OK
+
+TestCase2
+
+``` python
+class TestName(unittest.TestCase):
+    def test_name(self):
+        result = Add().addition(5,2)
+        self.assertNotEqual(result,7)
+```
+
+    test_name (__main__.TestName) ... FAIL
+
+    ======================================================================
+    FAIL: test_name (__main__.TestName)
+    ----------------------------------------------------------------------
+    Traceback (most recent call last):
+      File "C:\Users\5115\AppData\Local\Temp\ipykernel_16756\1741407222.py", line 5, in test_name
+        self.assertNotEqual(result,7)
+    AssertionError: 7 == 7
+
+    ----------------------------------------------------------------------
+    Ran 1 test in 0.003s
+
+    FAILED (failures=1)
+
+TestCase3
+
+``` python
+class TestName(unittest.TestCase):
+    def test_name(self):
+        result = Add().addition(5,2)
+        self.assertIs(result, 7)
+```
+
+    test_name (__main__.TestName) ... ok
+
+    ----------------------------------------------------------------------
+    Ran 1 test in 0.003s
+
+    OK
+
+TestCase4
+
+``` python
+class TestName(unittest.TestCase):
+    def test_name(self):
+        result = Add().addition(5,2)
+        self.assertIsNot(result, 7)
+```
+
+    test_name (__main__.TestName) ... FAIL
+
+    ======================================================================
+    FAIL: test_name (__main__.TestName)
+    ----------------------------------------------------------------------
+    Traceback (most recent call last):
+      File "C:\Users\5115\AppData\Local\Temp\ipykernel_16756\383584172.py", line 5, in test_name
+        self.assertIsNot(result, 7)
+    AssertionError: unexpectedly identical: 7
+
+    ----------------------------------------------------------------------
+    Ran 1 test in 0.004s
+
+    FAILED (failures=1)
+
+## Example 2 : Imported from test2
+
+``` python
+class TestName(unittest.TestCase):
+    def test_name(self):
+        result = Name("Akash").name()
+        assert result=='greetings !!!! Akash'
+```
+
+    test_name (__main__.TestName) ... ok
+
+    ----------------------------------------------------------------------
+    Ran 1 test in 0.003s
+
+    OK
+
+``` python
+class TestName(unittest.TestCase):
+    def test_name(self):
+        result = Name("Akash").name()
+        test_eq(result, "greetings !!!! Anil")
+```
+
+    test_name (__main__.TestName) ... FAIL
+
+    ======================================================================
+    FAIL: test_name (__main__.TestName)
+    ----------------------------------------------------------------------
+    Traceback (most recent call last):
+      File "C:\Users\5115\AppData\Local\Temp\ipykernel_16756\3509561193.py", line 5, in test_name
+        test_eq(result, "greetings !!!! Anil")
+      File "C:\Users\5115\AppData\Local\miniconda3\envs\test_env\lib\site-packages\fastcore\test.py", line 37, in test_eq
+        test(a,b,equals, cname='==')
+      File "C:\Users\5115\AppData\Local\miniconda3\envs\test_env\lib\site-packages\fastcore\test.py", line 27, in test
+        assert cmp(a,b),f"{cname}:\n{a}\n{b}"
+    AssertionError: ==:
+    greetings !!!! Akash
+    greetings !!!! Anil
+
+    ----------------------------------------------------------------------
+    Ran 1 test in 0.003s
+
+    FAILED (failures=1)
