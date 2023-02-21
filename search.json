@@ -1,0 +1,44 @@
+[
+  {
+    "objectID": "core.html",
+    "href": "core.html",
+    "title": "test2",
+    "section": "",
+    "text": "class Name:\n    \"\"\"This class greets user \"\"\"\n    def __init__(self,a):\n        self.a = a\n    def name(self):\n        \"\"\"This function greets the user with name.\"\"\"\n        return f\"greetings !!!! {self.a}\"\n\n\nobj = Name(\"Akash\")\nobj.name()\n\n'greetings !!!! Akash'"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "nbdev-test2",
+    "section": "",
+    "text": "This file will become your README and also the index of your documentation."
+  },
+  {
+    "objectID": "index.html#install",
+    "href": "index.html#install",
+    "title": "nbdev-test2",
+    "section": "Install",
+    "text": "Install\npip install nbdev_test2"
+  },
+  {
+    "objectID": "index.html#how-to-use",
+    "href": "index.html#how-to-use",
+    "title": "nbdev-test2",
+    "section": "How to use",
+    "text": "How to use\nbasic functionality of nbdev"
+  },
+  {
+    "objectID": "index.html#examples",
+    "href": "index.html#examples",
+    "title": "nbdev-test2",
+    "section": "Examples",
+    "text": "Examples\n\n\nAdd\n\n Add ()\n\nThis class performs addition.\nTestCase1\n\nclass TestName(unittest.TestCase):\n    def test_name(self):\n        result = Add().addition(5,2)\n        self.assertEqual(result,7)\n\n\n\ntest_name (__main__.TestName) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.004s\n\nOK\n\n\nTestCase2\n\nclass TestName(unittest.TestCase):\n    def test_name(self):\n        result = Add().addition(5,2)\n        self.assertNotEqual(result,7)\n\n\n\ntest_name (__main__.TestName) ... FAIL\n\n======================================================================\nFAIL: test_name (__main__.TestName)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"C:\\Users\\5115\\AppData\\Local\\Temp\\ipykernel_16756\\1741407222.py\", line 5, in test_name\n    self.assertNotEqual(result,7)\nAssertionError: 7 == 7\n\n----------------------------------------------------------------------\nRan 1 test in 0.003s\n\nFAILED (failures=1)\n\n\nTestCase3\n\nclass TestName(unittest.TestCase):\n    def test_name(self):\n        result = Add().addition(5,2)\n        self.assertIs(result, 7)\n\n\n\ntest_name (__main__.TestName) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.003s\n\nOK\n\n\nTestCase4\n\nclass TestName(unittest.TestCase):\n    def test_name(self):\n        result = Add().addition(5,2)\n        self.assertIsNot(result, 7)\n\n\n\ntest_name (__main__.TestName) ... FAIL\n\n======================================================================\nFAIL: test_name (__main__.TestName)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"C:\\Users\\5115\\AppData\\Local\\Temp\\ipykernel_16756\\383584172.py\", line 5, in test_name\n    self.assertIsNot(result, 7)\nAssertionError: unexpectedly identical: 7\n\n----------------------------------------------------------------------\nRan 1 test in 0.004s\n\nFAILED (failures=1)"
+  },
+  {
+    "objectID": "index.html#example-2-imported-from-test2-and-testing-using-fastcore",
+    "href": "index.html#example-2-imported-from-test2-and-testing-using-fastcore",
+    "title": "nbdev-test2",
+    "section": "Example 2 : Imported from test2 and Testing using Fastcore",
+    "text": "Example 2 : Imported from test2 and Testing using Fastcore\n\nclass TestName(unittest.TestCase):\n    def test_name(self):\n        result = Name(\"Akash\").name()\n        assert result=='greetings !!!! Akash'\n\n\n\ntest_name (__main__.TestName) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.003s\n\nOK\n\n\n\nclass TestName(unittest.TestCase):\n    def test_name(self):\n        result = Name(\"Akash\").name()\n        test_eq(result, \"greetings !!!! Anil\")\n\n\n\ntest_name (__main__.TestName) ... FAIL\n\n======================================================================\nFAIL: test_name (__main__.TestName)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"C:\\Users\\5115\\AppData\\Local\\Temp\\ipykernel_16756\\3509561193.py\", line 5, in test_name\n    test_eq(result, \"greetings !!!! Anil\")\n  File \"C:\\Users\\5115\\AppData\\Local\\miniconda3\\envs\\test_env\\lib\\site-packages\\fastcore\\test.py\", line 37, in test_eq\n    test(a,b,equals, cname='==')\n  File \"C:\\Users\\5115\\AppData\\Local\\miniconda3\\envs\\test_env\\lib\\site-packages\\fastcore\\test.py\", line 27, in test\n    assert cmp(a,b),f\"{cname}:\\n{a}\\n{b}\"\nAssertionError: ==:\ngreetings !!!! Akash\ngreetings !!!! Anil\n\n----------------------------------------------------------------------\nRan 1 test in 0.003s\n\nFAILED (failures=1)"
+  }
+]
